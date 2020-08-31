@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  main {
+    padding-top: 88px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  .nav-logo {
+    display: none;
+  }
+  
+  .nav-bar-content {
+    width: 100%;
+  }
+  
+  .topNav,
+  .bottomNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    list-style: none;
+    
+  }
+  
+  .topNav {
+    background-color: #131313;
+    height: 32px;
+    font-size: 13px;
+    padding-right: 20px;
+  }
+  
+  .bottomNav a {
+    color: #aaa;
+    
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-bottom: 1px solid#ffccc3;
+  }
+  
+  .icon-container a {
+    display: flex;
+    align-items: center;
+    height: 22px;
+    margin: 0 13px 6.5px 0;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .extra-info a {
+    color: #555;
+  }
+  
+  .author a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .latest > a {
+    background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Twitter-compression.jpg') center/cover;
+    width: 96px;
+    height: 96px;
+  }
+  
+  .topNav a,
+  .top-footer li a {
+    color: rgba(255, 255, 255, 0.6);
+    
+  }
+  
+  .topNav ul,
+  .bottomNav ul,
+  .price-tag {
+    display: flex;
+  }
+  
+  .topNav li {
+    margin-left: 12px;
+    line-height: 32px;
+    list-style: none;
+    margin-top: -10px;
+   
+  }
+  
+  .view-header h2 a {
+    color: white;
+    font-size: 56px;
+  }
+  
+  .latest-index span a,
+  .latest-deals span a {
+    color: #f42;
+  }
+  
+  .popular-header h3 a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .latest-header h4 a {
+    color: #f42;
+    font-size: 14px;
+  }
+  
+  .headline h4 a {
+    position: relative;
+    max-height: 50px;
+    display: block;
+    padding: 6px 0 6px 14px;
+    font-size: 13px;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  .author a:hover {
+    color: white;
+  }
+  
+  .topNav li a:hover,
+  .top-footer li a:hover {
+    color: white;
+  }
+  
+  .bottomNav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 48px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    width: 100%;
+    box-shadow: 1px 0 20px rgba(59, 55, 59, 0.2);
+    background-color: white;
+  }
+  
+  .bottomNav,
+  .bottomNav button {
+    z-index: 10;
+  }
+  
+  .bottomNav li {
+    margin: 18px 12px 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .bottomNav li a:hover {
+    color: #234;
+  }
+  
+  .bottomNav button {
+    width: 47px;
+    border: none;
+    border-left: 1px solid #eee;
+    background-color: white;
+  }
+  
+  .search-icon {
+   float: left;
+    margin-right: 100px;
+    width: 16px;
+    height: 16px;
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
+  }
