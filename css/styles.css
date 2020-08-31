@@ -601,3 +601,120 @@ body {
   .line-through {
     text-decoration: line-through;
   }
+
+  footer {
+    width: inherit;
+    height: 257px;
+  }
+  
+  .top-footer {
+    height: 160px;
+    padding: 42px 0 28px;
+    background: #131313;
+  }
+  
+  .top-footer > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    margin-bottom: 21px;
+  }
+  
+  .top-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-icons {
+    width: 30px;
+    height: 30px;
+    background: rgb(68, 67, 67);
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .footer-icons i{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    
+  }
+  
+  .footer-icons:hover {
+    background: #131313;
+  }
+  
+  .icon-facebook {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -272px -272px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .icon-twitter {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -1024px -1024px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .icon-youtube {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -1280px -1280px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .icon-instagram {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -416px -416px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .icon-pinterest {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -672px -672px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .icon-feed {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -816px -816px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .icon-mail {
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -576px -576px;
+    height: 16px;
+    width: 16px;
+    display: block;
+  }
+  
+  .bottom-footer {
+    height: 37.74%;
+    padding: 39px 0;
+    text-align: center;
+    background: #000;
+  }
+  
+  .bottom-footer img {
+    display: inline-block;
+    height: 9px;
+    vertical-align: baseline;
+    max-width: 100%;
+    margin-right: 5px;
+  }
+  
+  .love {
+    color: #f42;
+  }
