@@ -718,3 +718,243 @@ body {
   .love {
     color: #f42;
   }
+
+
+  @media screen and (max-width: 1023px) {
+    main {
+      padding-top: 90px;
+    }
+  
+    .bottomNav {
+      position: relative;
+    }
+  
+    .nav-bar {
+      position: fixed;
+      grid-template-columns: 106px 1fr;
+      z-index: 9999;
+    }
+  
+    .nav-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 106px;
+      height: 80px;
+      background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif');
+      background-position: 50%;
+      background-size: cover;
+    }
+  
+    .nav-logo img {
+      height: 16px;
+      width: 66px;
+    }
+  
+    .nav-bar-content {
+      width: 100%;
+    }
+  
+    .latest-news {
+      margin: 0;
+    }
+  
+    .latest-news ul,
+    .latest-deals ul {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 18px 18px;
+    }
+  
+    .img-news {
+      height: 157px;
+    }
+  
+    .latest-index header {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+    }
+  
+    .latest-index header h1 {
+      margin: 0;
+    }
+  
+    .latest-index header span {
+      margin-top: 10px;
+    }
+  
+    .index-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 0 24px;
+      margin: 0 0 56px;
+    }
+  
+    .index-container div:nth-child(4) {
+      display: none;
+    }
+  
+    .most-popular {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 48px 24px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .img-deals {
+      height: 234px;
+    }
+  
+    .view-link {
+      background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
+    }
+  
+    .view-header {
+      left: 12px;
+      bottom: 16px;
+    }
+  
+    .view-header h2 a {
+      font-size: 40px;
+    }
+  
+    .view-item-2 .view-header h2 a {
+      font-size: 20px;
+    }
+  
+    .view-date,
+    .view-logo {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 811px) {
+    .topNav .nav-bar-end {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    main {
+      padding-top: 56px;
+    }
+  
+    h2 {
+      margin: 5px 0 10px;
+    }
+  
+    .topNav,
+    .bottomNav ul {
+      display: none;
+    }
+  
+    .bottomNav button {
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      border-right: 1px solid #eee;
+      right: 0;
+    }
+  
+    .nav-logo {
+      height: 48px;
+    }
+  
+    .main-view {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      height: 90vh;
+      padding: 0 8px 8px;
+    }
+  
+    .view-item-2 {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    .view-header {
+      left: 12px;
+      bottom: 12px;
+    }
+  
+    .view-header h2 a {
+      font-size: 20px;
+    }
+  
+    .latest-news ul li a {
+      display: grid;
+      grid-template-columns: 75px 1fr;
+      height: 75px;
+    }
+  
+    .latest-deals ul li a {
+      display: grid;
+      grid-template-columns: 75px 1fr;
+      height: 75px;
+    }
+  
+    .view-item-2 .view-header h2 a {
+      font-size: 20px;
+    }
+  
+    .latest-news ul,
+    .latest-deals ul {
+      grid-template-columns: 1fr;
+      grid-gap: 12px 0;
+    }
+  
+    .img-news,
+    .img-deals {
+      height: 75px;
+      margin-bottom: 0;
+    }
+  
+    .latest-div {
+      height: 75px;
+      padding-left: 13px;
+    }
+  
+    .deals-ribbon {
+      display: none;
+    }
+  
+    .most-popular {
+      grid-template-columns: 1fr;
+      grid-gap: 48px 24px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .popular-link {
+      height: 70vw;
+    }
+  
+    .index-container {
+      grid-template-columns: 1fr;
+      grid-gap: 24px 0;
+      margin: 0 0 56px;
+    }
+  
+    .top-footer {
+      height: 207px;
+    }
+  
+    .top-footer div {
+      padding-left: 9px;
+    }
+  
+    .top-footer > div:nth-child(1) {
+      flex-wrap: wrap;
+    }
+  
+    .top-footer ul {
+      flex-wrap: wrap;
+      padding-top: 20px;
+    }
+  
+    .top-footer li {
+      padding-top: 10px;
+    }
+  }
