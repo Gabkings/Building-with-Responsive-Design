@@ -80,7 +80,7 @@ a {
 
 .topNav a,
 .top-footer li a {
-  color: #2524249f;
+  color: #eee;
 }
 
 .topNav ul,
@@ -181,10 +181,10 @@ a {
 .main-view {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 100%;
+  width: 97vw;
   grid-gap: 8px;
-  height: 55vh;
-  padding: 0 8px 8px;
+  height: 60vh;
+  padding: 0 5px 5px;
   color: white;
 }
 
@@ -249,6 +249,7 @@ h1 * {
 .top-footer li {
   margin-right: 15px;
   font-size: 11px;
+  list-style: none;
 }
 
 .view-header ul li {
@@ -280,7 +281,7 @@ h1 * {
 
 .view-logo {
   position: absolute;
-  top: -70px;
+  top: 0;
   left: 20px;
   width: 40%;
   height: 112px;
@@ -605,16 +606,21 @@ h6 {
 footer {
   width: inherit;
   height: 257px;
+  text-align: center;
+  width: 100vw;
 }
 
 .top-footer {
   height: 160px;
   padding: 42px 0 28px;
   background: #131313;
+  text-align: center;
 }
 
 .top-footer > div:nth-child(1) {
   display: flex;
+  align-items: center;
+  justify-items: center;
   justify-content: center;
   height: 45px;
   margin-bottom: 21px;
@@ -833,7 +839,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 560px) {
   main {
     padding-top: 56px;
   }
@@ -881,16 +887,21 @@ footer {
     font-size: 20px;
   }
 
+  .latest-news ul li{
+    margin-bottom: 20px;
+  }
+
   .latest-news ul li a {
     display: grid;
     grid-template-columns: 75px 1fr;
     height: 75px;
+    font-size: medium;
   }
 
   .latest-deals ul li a {
     display: grid;
-    grid-template-columns: 75px 1fr;
-    height: 75px;
+    grid-template-columns: 75px 2fr;
+    height: 100px;
   }
 
   .view-item-2 .view-header h2 a {
@@ -905,13 +916,29 @@ footer {
 
   .img-news,
   .img-deals {
-    height: 75px;
+    height: 80px;
     margin-bottom: 0;
   }
 
   .latest-div {
-    height: 75px;
+    height: 100px;
     padding-left: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .latest-div h4{
+    display: block;
+    margin-top: -8px;
+    height: 60%;
+  }
+
+  .timer{
+    display: block;
+    margin-top: -14px;
+    height: 25%;
   }
 
   .deals-ribbon {
@@ -937,18 +964,26 @@ footer {
 
   .top-footer {
     height: 207px;
+    text-align: center;
   }
 
   .top-footer div {
     padding-left: 9px;
   }
 
+  .top-footer div a{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .top-footer > div:nth-child(1) {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .top-footer ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
     padding-top: 20px;
   }
 
