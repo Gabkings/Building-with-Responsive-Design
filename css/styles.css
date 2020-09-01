@@ -604,7 +604,6 @@ h6 {
 }
 
 footer {
-  width: inherit;
   height: 257px;
   text-align: center;
   width: 100vw;
@@ -887,7 +886,17 @@ footer {
     font-size: 20px;
   }
 
-  .latest-news ul li{
+  .top-footer li {
+    padding-top: 10px;
+  }
+
+  .top-footer div a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .latest-news ul li {
     margin-bottom: 20px;
   }
 
@@ -929,13 +938,13 @@ footer {
     justify-content: space-between;
   }
 
-  .latest-div h4{
+  .latest-div h4 {
     display: block;
     margin-top: -8px;
     height: 60%;
   }
 
-  .timer{
+  .timer {
     display: block;
     margin-top: -14px;
     height: 25%;
@@ -971,23 +980,12 @@ footer {
     padding-left: 9px;
   }
 
-  .top-footer div a{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
   .top-footer > div:nth-child(1) {
     flex-wrap: nowrap;
   }
 
   .top-footer ul {
     flex-wrap: nowrap;
-
     padding-top: 20px;
-  }
-
-  .top-footer li {
-    padding-top: 10px;
   }
 }
