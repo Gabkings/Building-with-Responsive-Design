@@ -282,8 +282,8 @@ body {
   
   .view-logo {
     position: absolute;
-    margin-top: 1vw;
-    top: 0;
+    /* margin-top: 1vw; */
+    top: -70px;
     left: 20px;
     width: 40%;
     height: 112px;
@@ -376,7 +376,7 @@ body {
     height: 50px;
     margin: 10.6666666667px;
     position: absolute;
-    top: 70;
+    top: -5;
     left: 5;
     z-index: 2;
   }
