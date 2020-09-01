@@ -90,6 +90,8 @@ body {
   .bottomNav ul,
   .price-tag {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
   
   .topNav li {
@@ -429,6 +431,7 @@ body {
     grid-gap: 48px 24px;
     width: 100%;
     height: auto;
+    margin-top: 20px;
   }
   
   .latest-news h1 a::after,
@@ -441,6 +444,7 @@ body {
     height: 16px;
     width: 16px;
     margin-left: 4px;
+    margin-top: 20px;
     position: relative;
     top: 1px;
   }
