@@ -327,6 +327,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 24px 24px;
+    list-style-type: none;
   }
   
   .img-news {
@@ -376,7 +377,7 @@ body {
     height: 50px;
     margin: 10.6666666667px;
     position: absolute;
-    top: -5;
+    top: 18px;
     left: 5;
     z-index: 2;
   }
