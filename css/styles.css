@@ -4,6 +4,7 @@ body {
 
 main {
   padding-top: 88px;
+  width: 100%;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   height: 80px;
-  width: 100%;
+  width: 90%;
   position: fixed;
   z-index: 10;
 }
@@ -84,8 +85,14 @@ a {
 }
 
 .topNav ul,
-.bottomNav ul,
+.bottomNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .price-tag {
+  margin-top: -20px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -128,6 +135,13 @@ a {
   font-weight: 400;
 }
 
+.top-footer ul li a {
+  color: #eee;
+  display: block;
+  width: 100%;
+  margin: auto 30px;
+}
+
 .author a:hover {
   color: white;
 }
@@ -164,15 +178,18 @@ a {
 }
 
 .bottomNav button {
+  float: left;
   width: 47px;
   border: none;
   border-left: 1px solid #eee;
   background-color: white;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 1px;
 }
 
 .search-icon {
   float: left;
-  margin-right: 100px;
   width: 16px;
   height: 16px;
   background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
@@ -181,7 +198,7 @@ a {
 .main-view {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 97vw;
+  width: 100vw;
   grid-gap: 8px;
   height: 60vh;
   padding: 0 5px 5px;
@@ -605,15 +622,17 @@ h6 {
 
 footer {
   height: 257px;
-  text-align: center;
-  width: 98vw;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-footer {
   height: 160px;
   padding: 42px 0 28px;
   background: #131313;
-  text-align: center;
+  width: 96%;
 }
 
 .top-footer > div:nth-child(1) {
@@ -626,9 +645,19 @@ footer {
 }
 
 .top-footer ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  width: 98%;
+}
+
+.second-links {
+  margin: auto;
+  text-align: right;
+}
+
+.top-footer ul li {
+  display: inline-block;
+  width: 8%;
+  margin: 10px;
 }
 
 .footer-icons {
@@ -709,6 +738,7 @@ footer {
   padding: 39px 0;
   text-align: center;
   background: #000;
+  width: 96%;
 }
 
 .bottom-footer img {
@@ -839,6 +869,10 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
+  header {
+    width: 100%;
+  }
+
   main {
     padding-top: 56px;
   }
@@ -853,11 +887,20 @@ footer {
   }
 
   .bottomNav button {
-    position: absolute;
+    float: left;
     height: 48px;
     width: 48px;
     border-right: 1px solid #eee;
-    right: 0;
+  }
+
+  .navBtns {
+    float: left;
+    position: absolute;
+    right: 0%;
+  }
+
+  .humbg {
+    color: #f7d931;
   }
 
   .nav-logo {
@@ -870,6 +913,7 @@ footer {
     grid-template-rows: 1fr 2fr;
     height: 90vh;
     padding: 0 8px 8px;
+    width: 97%;
   }
 
   .view-item-2 {
@@ -886,8 +930,9 @@ footer {
     font-size: 20px;
   }
 
-  .top-footer li {
-    padding-top: 10px;
+  footer {
+    width: 100%;
+    text-align: center;
   }
 
   .top-footer div a {
@@ -896,8 +941,18 @@ footer {
     align-items: center;
   }
 
-  .latest-news ul li {
-    margin-bottom: 20px;
+  .top-footer ul li {
+    display: inline-block;
+    width: 10%;
+    margin: auto 8px;
+    padding: 4px;
+  }
+
+  .footer-icons {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    text-align: center;
   }
 
   .latest-news ul li a {
@@ -941,7 +996,7 @@ footer {
   .latest-div h4 {
     display: block;
     margin-top: -8px;
-    height: 60%;
+    height: 55%;
   }
 
   .timer {
@@ -976,16 +1031,21 @@ footer {
     text-align: center;
   }
 
+  .top-footer ul {
+    text-align: right;
+    float: right;
+    margin: 0;
+  }
+
+  .top-footer ul:last-child {
+    margin-right: 60px;
+  }
+
   .top-footer div {
     padding-left: 9px;
   }
 
   .top-footer > div:nth-child(1) {
     flex-wrap: nowrap;
-  }
-
-  .top-footer ul {
-    flex-wrap: nowrap;
-    padding-top: 20px;
   }
 }
