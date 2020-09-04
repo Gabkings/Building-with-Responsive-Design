@@ -127,10 +127,7 @@ a {
   font-weight: 400;
 }
 
-.author a:hover {
-  color: white;
-}
-
+.author a:hover,
 .topNav li a:hover,
 .top-footer li a:hover {
   color: white;
