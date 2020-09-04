@@ -167,7 +167,7 @@ a {
 }
 
 .nav-message {
-  width: 98%;
+  width: 100%;
   background-color: #f7f3068e;
   opacity: 1;
   font-size: 14px;
@@ -180,7 +180,6 @@ a {
 .main-view {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 100%;
   grid-gap: 8px;
   height: 55vh;
   padding: 0 8px 8px;
@@ -746,6 +745,17 @@ footer {
     width: 100%;
   }
 
+  .nav-message {
+    width: 100%;
+    background-color: #f7f3068e;
+    opacity: 1;
+    font-size: 14px;
+    height: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    display: block;
+  }
+
   .latest-news {
     margin: 0;
   }
@@ -840,22 +850,32 @@ footer {
   .nav-bar-content .bars {
     display: none;
   }
+
+  .nav-message {
+    width: 100%;
+    background-color: #f7f3068e;
+    opacity: 1;
+    font-size: 14px;
+    height: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 811px) {
   .topNav .nav-bar-end {
     display: none;
   }
+
+  .message {
+    width: 100vw;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-
   main {
     padding-top: 56px;
     width: 97vw;
