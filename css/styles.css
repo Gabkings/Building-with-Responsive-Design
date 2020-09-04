@@ -977,6 +977,10 @@ footer {
     height: auto;
   }
 
+  .most-popular ul li {
+    list-style: none;
+  }
+
   .popular-link {
     height: 70vw;
   }
