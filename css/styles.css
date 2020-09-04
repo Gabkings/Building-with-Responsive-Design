@@ -162,21 +162,6 @@ a {
   color: #234;
 }
 
-.bottomNav button {
-  width: 47px;
-  border: none;
-  border-left: 1px solid #eee;
-  background-color: white;
-}
-
-.search-icon {
-  float: left;
-  margin-right: 100px;
-  color: #f42;
-  width: 16px;
-  height: 16px;
-  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
-}
 
 .nav-message {
   width: 98%;
@@ -343,11 +328,6 @@ h6 {
   height: 135px;
   margin-bottom: 4px;
 }
-
-/* .timer {
-  padding-top: 4px;
-  color: #aaa;
-} */
 
 .latest-index header,
 .latest-deals header {
@@ -841,6 +821,22 @@ footer {
   }
 }
 
+@media screen and (min-width: 800px){
+  .nav-bar-content .search{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background: #fff;
+    width: 26px;
+    height: 26px;
+    border: none;
+  }
+
+  .nav-bar-content .bars{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 811px) {
   .topNav .nav-bar-end {
     display: none;
@@ -874,11 +870,6 @@ footer {
     width: 100%;
   }
 
-  .navBtns {
-    float: left;
-    color: crimson;
-  }
-
   .topNav,
   .bottomNav ul {
     display: none;
@@ -886,9 +877,10 @@ footer {
   }
 
   .nav-bar-content button {
+    position: absolute;
     height: 48px;
+    display: block;
     width: 48px;
-    float: left;
     background: #fff;
     border: none;
     border-right: 1px solid #eee;
@@ -896,9 +888,9 @@ footer {
   }
 
   .bars{
-    position: absolute;
     margin-left: 0px;
     left: 300px;
+    display: block;
   }
 
   .search{
@@ -960,6 +952,7 @@ footer {
     display: grid;
     grid-template-columns: 75px 1fr;
     height: 75px;
+    margin-bottom: 30px;
   }
 
   .view-item-2 .view-header h2 a {
@@ -1005,7 +998,10 @@ footer {
 
   .latest-d ul li {
     margin-bottom: 20px;
+    
   }
+
+
 
   .latest-news ul li a img {
     width: 80%;
