@@ -1,11 +1,8 @@
-* { 
+body {
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -28,6 +25,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  background: #fff;
 }
 
 .nav-logo {
@@ -171,6 +169,7 @@ a {
 .nav-message {
   width: 98%;
   background-color: #f7f3068e;
+  opacity: 1;
   font-size: 14px;
   height: 30px;
   text-align: left;
@@ -736,14 +735,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 106px;
     height: 80px;
   }
 
   .nav-logo img {
-    height: 48px;
-    width: 66px;
-    margin-left: -35px;
+    width: 100%;
   }
 
   .nav-bar-content {
@@ -872,6 +868,7 @@ footer {
   .nav-bar-content {
     width: 450px;
     height: 48px;
+    opacity: 1;
   }
 
   .bottomNav {
@@ -917,10 +914,11 @@ footer {
     display: block;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .nav-message {
-    width: 100%;
+    width: 100vw;
     text-align: left;
     margin-top: 10px;
     font-size: 11px;
