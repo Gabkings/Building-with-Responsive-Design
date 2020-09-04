@@ -185,6 +185,7 @@ a {
   height: 30px;
   text-align: left;
   margin-bottom: 20px;
+  display: block;
 }
 
 .main-view {
@@ -417,6 +418,7 @@ h6 {
 .bottom-footer > span {
   font-size: 100%;
   color: #aaa;
+  display: block;
 }
 
 .icon-container a span {
@@ -625,7 +627,7 @@ footer {
   display: flex;
   justify-content: center;
   height: 45px;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
 }
 
 .top-footer ul {
@@ -747,14 +749,12 @@ footer {
     align-items: center;
     width: 106px;
     height: 80px;
-    background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif');
-    background-position: 50%;
-    background-size: cover;
   }
 
   .nav-logo img {
-    height: 16px;
+    height: 48px;
     width: 66px;
+    margin-left: -35px;
   }
 
   .nav-bar-content {
@@ -848,6 +848,13 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
   main {
     padding-top: 56px;
     width: 97vw;
@@ -858,12 +865,12 @@ footer {
   }
 
   .nav-bar-content {
-    width: 600px;
+    width: 450px;
     height: 48px;
   }
 
   .bottomNav {
-    height: 48px;
+    height: 0;
     width: 100%;
   }
 
@@ -875,18 +882,49 @@ footer {
   .topNav,
   .bottomNav ul {
     display: none;
+    height: 0;
   }
 
-  .bottomNav button {
-    position: absolute;
+  .nav-bar-content button {
     height: 48px;
     width: 48px;
+    float: left;
+    background: #fff;
+    border: none;
     border-right: 1px solid #eee;
-    right: 0;
+    margin-right: 5px;
   }
+
+  .bars{
+    position: absolute;
+    margin-left: 0px;
+    left: 300px;
+  }
+
+  .search{
+    position: absolute;
+    margin-left: 0px;
+    left: 250px;
+  }
+
+
 
   .nav-logo {
     height: 48px;
+  }
+
+  .message {
+    width: 100vw;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-message {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 11px;
   }
 
   .main-view {
@@ -895,6 +933,7 @@ footer {
     grid-template-rows: 1fr 2fr;
     height: 90vh;
     padding: 0 8px 8px;
+    margin-top: 34px;
   }
 
   .view-item-2 {
