@@ -162,7 +162,6 @@ a {
   color: #234;
 }
 
-
 .nav-message {
   width: 98%;
   background-color: #f7f3068e;
@@ -821,8 +820,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px){
-  .nav-bar-content .search{
+@media screen and (min-width: 800px) {
+  .nav-bar-content .search {
     position: absolute;
     top: 40px;
     right: 30px;
@@ -832,7 +831,7 @@ footer {
     border: none;
   }
 
-  .nav-bar-content .bars{
+  .nav-bar-content .bars {
     display: none;
   }
 }
@@ -887,19 +886,17 @@ footer {
     margin-right: 5px;
   }
 
-  .bars{
-    margin-left: 0px;
+  .bars {
+    margin-left: 0;
     left: 300px;
     display: block;
   }
 
-  .search{
+  .search {
     position: absolute;
-    margin-left: 0px;
+    margin-left: 0;
     left: 250px;
   }
-
-
 
   .nav-logo {
     height: 48px;
@@ -998,10 +995,7 @@ footer {
 
   .latest-d ul li {
     margin-bottom: 20px;
-    
   }
-
-
 
   .latest-news ul li a img {
     width: 80%;
