@@ -167,7 +167,7 @@ a {
 }
 
 .nav-message {
-  width: 100%;
+  width: 100vw;
   background-color: #f7f3068e;
   opacity: 1;
   font-size: 14px;
@@ -746,7 +746,7 @@ footer {
   }
 
   .nav-message {
-    width: 100%;
+    width: 100vw;
     background-color: #f7f3068e;
     opacity: 1;
     font-size: 14px;
@@ -852,7 +852,7 @@ footer {
   }
 
   .nav-message {
-    width: 100%;
+    width: 100vw;
     background-color: #f7f3068e;
     opacity: 1;
     font-size: 14px;
