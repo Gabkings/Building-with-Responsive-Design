@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 main {
   padding-top: 88px;
   width: 97vw;
@@ -95,6 +99,7 @@ a {
 .bottomNav ul,
 .price-tag {
   display: flex;
+  justify-content: space-between;
 }
 
 .topNav li {
@@ -166,9 +171,13 @@ a {
   color: #234;
 }
 
+.nav-bar-content .message {
+  background: yellow;
+}
+
 .nav-message {
   width: 100vw;
-  background-color: #f7f3068e;
+  background: yellow;
   opacity: 1;
   font-size: 14px;
   height: 30px;
@@ -412,6 +421,7 @@ h6 {
   padding: 10px 16px 16px;
   font-size: 12px;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .most-popular {
@@ -420,10 +430,12 @@ h6 {
   grid-gap: 48px 24px;
   width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
-.most-popular ul li {
-  list-style: none;
+.most-popular h1 {
+  margin-left: 35px;
+  margin-top: 20px;
 }
 
 .latest-news h1 a::after,
@@ -745,9 +757,13 @@ footer {
     width: 100%;
   }
 
+  .message {
+    background: yellow;
+  }
+
   .nav-message {
     width: 100vw;
-    background-color: #f7f3068e;
+    background: yellow;
     opacity: 1;
     font-size: 14px;
     height: 30px;
@@ -853,12 +869,11 @@ footer {
 
   .nav-message {
     width: 100vw;
-    background-color: #f7f3068e;
+    background-color: yellow;
     opacity: 1;
     font-size: 14px;
     height: 30px;
     text-align: left;
-    margin-bottom: 20px;
     display: block;
   }
 }
@@ -871,8 +886,31 @@ footer {
   .message {
     width: 100vw;
     display: block;
-    margin-bottom: 20px;
-    background-color: #f7f3068e;
+    margin-bottom: 40px;
+    background: yellow;
+    height: 20px;
+  }
+
+  .nav-message {
+    margin-top: 10px;
+    background: yellow;
+  }
+
+  .nav-bar-content .search {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border: none;
+    margin-top: -20px;
+    color: black;
+    top: 60px;
+    right: 10px;
+    z-index: 12;
+  }
+
+  .nav-bar-content .bars {
+    display: none;
   }
 }
 
